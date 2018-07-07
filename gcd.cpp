@@ -1,4 +1,12 @@
-/* Greatest common divisor */
+/* Greatest common divisor 
+
+  compile:  g++ gcd.cpp -o gcd
+  run:     ./gcd
+
+  Thanks to Euclidean, because algorithms are the hardest part
+  @vsoch programmer dinosaur
+
+*/
 
 #include <iostream>
 
@@ -12,24 +20,19 @@ int main() {
   int a, b = 0;
 
   do {
-
     // 1. Collect two positive numbers from the user
-
     cout << "Enter the first number to compute the greatest common divisor: ";
     a = getNumber();
     cout << "Enter the second number: ";
     b = getNumber();        
     cout << endl;
-
   } while((a==0) and (b==0));
 
 
   // 2. Compute greatest Common Divisor
-
   int gcd = calculateGcd(a, b);
 
   // 3. Tell user the result!
-
   cout << "The greatest common divisor is " << gcd << "." << endl;
 
   return 0;
@@ -43,8 +46,7 @@ int getNumber() {
   if (!(cin >> number)) {
     cout << "Please enter a valid positive number!" << endl;
 
-  } else {
-        
+  } else {        
     // Entering 0 is not allowed
     if (number > 0){
       return number;
@@ -57,14 +59,12 @@ int getNumber() {
 
 int calculateGcd(int a, int b) {
 
-  // https://en.wikipedia.org/wiki/Euclidean_algorithm
-
   cout << "You entered " << a << " and " << b << endl;
 
   // A holder for b
-
   int holder = b;
 
+  // https://en.wikipedia.org/wiki/Euclidean_algorithm
   while (b!=0) {
 
       holder = b;
