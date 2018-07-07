@@ -3,7 +3,7 @@
   compile:  g++ gcd.cpp -o gcd
   run:     ./gcd
 
-  Thanks to Euclidean, because algorithms are the hardest part
+  Thanks to Euclidean, because algorithms are hard for dinosaurs
   @vsoch programmer dinosaur
 
 */
