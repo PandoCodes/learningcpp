@@ -87,7 +87,7 @@ double CalcMethod3(WeeklySales w) {
 
   // No salary, but 20% commissions and $20 for each pair of shoes sold
   double salary;
-  salary = (0.2 * (w.shoes * w.price));
+  salary = (0.2 * (w.shoes * w.price)) + 20.0 * w.shoes;
   cout << "Option 3: $" << salary << " per week." << endl;
   return salary;
 }
