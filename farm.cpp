@@ -11,6 +11,7 @@
 */
 
 #include <iostream>
+#include <string> //forgot to add this ^^
 #include <math.h>
 
 using namespace std;
